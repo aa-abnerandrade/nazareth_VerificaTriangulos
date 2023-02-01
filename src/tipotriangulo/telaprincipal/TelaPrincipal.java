@@ -47,8 +47,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pnlResultado = new javax.swing.JPanel();
         lblResultadoTriangulo = new javax.swing.JLabel();
         lblResultadoTipo = new javax.swing.JLabel();
-        pnlEqui = new javax.swing.JPanel();
-        lblImagemEqui = new javax.swing.JLabel();
+        lblImagemTriangulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("classificador");
@@ -174,25 +173,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pnlResultado.setBackground(new java.awt.Color(255, 255, 255));
         pnlResultado.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblResultadoTriangulo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lblResultadoTriangulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblResultadoTriangulo.setForeground(new java.awt.Color(0, 153, 204));
         lblResultadoTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblResultadoTriangulo.setText("SIM!");
-        pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 125, 32));
+        pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 125, 32));
 
-        lblResultadoTipo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblResultadoTipo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         lblResultadoTipo.setForeground(new java.awt.Color(0, 102, 102));
         lblResultadoTipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblResultadoTipo.setText("Tipo");
-        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 180, -1));
+        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 210, -1));
 
-        pnlEqui.setBackground(new java.awt.Color(255, 255, 255));
-        pnlEqui.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        lblImagemEqui.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png"))); // NOI18N
-        pnlEqui.add(lblImagemEqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 110, 110));
-
-        pnlResultado.add(pnlEqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 150, 110));
+        lblImagemTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png"))); // NOI18N
+        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 110, 110));
 
         pnlHome.add(pnlResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 400, 160));
 
@@ -248,14 +243,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		txtResultadoTriangulo = "SIM";
 		if ((segA == segB) && (segB == segC)) {
 			txtResultadoTipo += "Equilátero.";
+			lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png")));
 		} else if ((segA == segB) || (segB == segC) || (segC == segA)) {
 			txtResultadoTipo += "Isósceles";
+			lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_isosceles.png")));
 		} else if ((segA != segB) && (segB != segC) || (segC != segA)) {
 			txtResultadoTipo += "Escaleno";
+			lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_escaleno.png")));
 		}
 	} else {
 		txtResultadoTriangulo = "<html><p color=\"red\">NÃO</p></html>";
 		txtResultadoTipo = "Algo de errado não está certo.";
+		lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nazare-tedesco-nazare-confusa.gif")));
 		
 	}
 	
@@ -315,13 +314,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel lblImagemEqui;
+    private javax.swing.JLabel lblImagemTriangulo;
     private javax.swing.JLabel lblLegendaSegA;
     private javax.swing.JLabel lblLegendaSegB;
     private javax.swing.JLabel lblLegendaSegC;
     private javax.swing.JLabel lblResultadoTipo;
     private javax.swing.JLabel lblResultadoTriangulo;
-    private javax.swing.JPanel pnlEqui;
     private javax.swing.JPanel pnlHome;
     private javax.swing.JPanel pnlImagemIlustrativa;
     private javax.swing.JPanel pnlResultado;
