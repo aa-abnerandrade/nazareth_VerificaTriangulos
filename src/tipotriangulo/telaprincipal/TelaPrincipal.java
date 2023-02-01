@@ -253,7 +253,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		}
 	} else {
 		txtResultadoTriangulo = "<html><p color=\"red\">NÃO</p></html>";
-		txtResultadoTipo = "Algo de errado não está certo.";
+		txtResultadoTipo = "Ops, algo de errado não está certo.";
 		lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nazare-tedesco-nazare-confusa.gif")));
 		
 	}
