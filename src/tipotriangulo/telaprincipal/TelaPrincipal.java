@@ -179,15 +179,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
         lblResultadoTriangulo.setText("SIM!");
         pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 125, 32));
 
-        lblResultadoTipo.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lblResultadoTipo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         lblResultadoTipo.setForeground(new java.awt.Color(0, 102, 102));
         lblResultadoTipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblResultadoTipo.setText("Tipo");
-        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 210, -1));
+        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 74, 200, 20));
 
-        lblImagemTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblImagemTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png"))); // NOI18N
-        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 110, 110));
+        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 360, 120));
 
         pnlHome.add(pnlResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 400, 160));
 
@@ -198,7 +198,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(5, 5, 5)
                 .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
