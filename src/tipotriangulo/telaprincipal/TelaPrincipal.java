@@ -103,21 +103,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         lblResultadoTriangulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblResultadoTriangulo.setForeground(new java.awt.Color(0, 153, 204));
-        lblResultadoTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblResultadoTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblResultadoTriangulo.setText("SIM!");
-        pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 80, 32));
+        pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 80, 30));
 
         lblResultadoTipo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         lblResultadoTipo.setForeground(new java.awt.Color(0, 102, 102));
-        lblResultadoTipo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblResultadoTipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblResultadoTipo.setText("um triângulo escaleno");
-        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 220, 20));
+        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 380, 30));
 
         lblImagemTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png"))); // NOI18N
-        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 300, 190));
+        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 390, 200));
 
-        pnlHome.add(pnlResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 410, 220));
+        pnlHome.add(pnlResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 410, 250));
 
         bttVerificar.setBackground(new java.awt.Color(0, 102, 102));
         bttVerificar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
@@ -210,7 +210,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+                .addComponent(pnlHome, javax.swing.GroupLayout.DEFAULT_SIZE, 492, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -258,8 +258,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 			lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_escaleno.png")));
 		}
 	} else {
-		txtResultadoTriangulo = "<html><p color=\"red\">NÃO</p></html>";
-		txtResultadoTipo = "<html><p background-color=\"white\">Ops, algo de errado não está certo.</p></html>";
+		txtResultadoTriangulo = "<html><p color=\"red\">OPS!</p></html>";
+		txtResultadoTipo = "<html><p>Não é possível formar um triângulo com as medidas informadas</p></html>";
 		lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nazare-tedesco-nazare-confusa.gif")));
 		
 	}
