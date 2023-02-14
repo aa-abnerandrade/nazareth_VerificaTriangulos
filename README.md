@@ -6,7 +6,9 @@
 
 ## Linguagens
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp1rLnnxIth_0GaWjmgbUD0ZygnpBGDAXIDNevsrcrMkSGQRrRU-VvOrIsxlRCkFFL8mo&usqp=CAU)
+<div style="text-align:center">
+  <img src="\to_readme\java--logo.png">
+</div>
 
 ## Tecnologias
 
@@ -27,8 +29,9 @@
 
 ## Screenshot
 
-![](./to_readme/screenshot--nazareth.gif)
-
+<div style="text-align: center">
+<img src="./to_readme/screenshot--nazareth.gif">
+</div>
 
 
 ## Distribuição
