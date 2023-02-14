@@ -17,15 +17,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         pnlHome = new javax.swing.JPanel();
         sldSegmentoA = new javax.swing.JSlider();
-        pnlResultado = new javax.swing.JPanel();
-        lblResultadoTriangulo = new javax.swing.JLabel();
-        lblResultadoTipo = new javax.swing.JLabel();
-        lblImagemTriangulo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         lblLegendaSegA = new javax.swing.JLabel();
         lblLegendaSegB = new javax.swing.JLabel();
         lblLegendaSegC = new javax.swing.JLabel();
+        pnlResultado = new javax.swing.JPanel();
+        lblResultadoTriangulo = new javax.swing.JLabel();
+        lblResultadoTipo = new javax.swing.JLabel();
+        lblImagemTriangulo = new javax.swing.JLabel();
         bttVerificar = new javax.swing.JButton();
         pnlImagemIlustrativa = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -68,56 +68,56 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 sldSegmentoAStateChanged(evt);
             }
         });
-        pnlHome.add(sldSegmentoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 64, 280, -1));
+        pnlHome.add(sldSegmentoA, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 64, 280, -1));
+
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel2.setText("Segmento A");
+        pnlHome.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 64, 70, 20));
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel3.setText("Segmento C");
+        pnlHome.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 134, -1, 20));
+
+        lblLegendaSegA.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblLegendaSegA.setForeground(new java.awt.Color(0, 153, 153));
+        lblLegendaSegA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLegendaSegA.setText("50");
+        pnlHome.add(lblLegendaSegA, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 64, 30, 20));
+
+        lblLegendaSegB.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblLegendaSegB.setForeground(new java.awt.Color(0, 153, 153));
+        lblLegendaSegB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLegendaSegB.setText("50");
+        pnlHome.add(lblLegendaSegB, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 99, 30, 20));
+
+        lblLegendaSegC.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        lblLegendaSegC.setForeground(new java.awt.Color(0, 153, 153));
+        lblLegendaSegC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblLegendaSegC.setText("50");
+        pnlHome.add(lblLegendaSegC, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 134, 30, 20));
 
         pnlResultado.setBackground(new java.awt.Color(255, 255, 255));
         pnlResultado.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblResultadoTriangulo.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         lblResultadoTriangulo.setForeground(new java.awt.Color(0, 153, 204));
-        lblResultadoTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblResultadoTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblResultadoTriangulo.setText("SIM!");
-        pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 140, 32));
+        pnlResultado.add(lblResultadoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 80, 32));
 
         lblResultadoTipo.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         lblResultadoTipo.setForeground(new java.awt.Color(0, 102, 102));
-        lblResultadoTipo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblResultadoTipo.setText("Tipo");
-        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 200, 20));
+        lblResultadoTipo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblResultadoTipo.setText("um triângulo escaleno");
+        pnlResultado.add(lblResultadoTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 220, 20));
 
-        lblImagemTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblImagemTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png"))); // NOI18N
-        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 380, 180));
+        pnlResultado.add(lblImagemTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 300, 190));
 
-        pnlHome.add(pnlResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 400, 170));
-
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel2.setText("Segmento A");
-        pnlHome.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 64, 70, 20));
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel3.setText("Segmento C");
-        pnlHome.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 134, -1, 20));
-
-        lblLegendaSegA.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        lblLegendaSegA.setForeground(new java.awt.Color(0, 153, 153));
-        lblLegendaSegA.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblLegendaSegA.setText("50");
-        pnlHome.add(lblLegendaSegA, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 64, 30, 20));
-
-        lblLegendaSegB.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        lblLegendaSegB.setForeground(new java.awt.Color(0, 153, 153));
-        lblLegendaSegB.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblLegendaSegB.setText("50");
-        pnlHome.add(lblLegendaSegB, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 99, 30, 20));
-
-        lblLegendaSegC.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        lblLegendaSegC.setForeground(new java.awt.Color(0, 153, 153));
-        lblLegendaSegC.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblLegendaSegC.setText("50");
-        pnlHome.add(lblLegendaSegC, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 134, 30, 20));
+        pnlHome.add(pnlResultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 410, 220));
 
         bttVerificar.setBackground(new java.awt.Color(0, 102, 102));
         bttVerificar.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
@@ -128,7 +128,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 bttVerificarActionPerformed(evt);
             }
         });
-        pnlHome.add(bttVerificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(146, 221, -1, -1));
+        pnlHome.add(bttVerificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, -1, -1));
 
         pnlImagemIlustrativa.setBackground(new java.awt.Color(255, 255, 255));
         pnlImagemIlustrativa.setMaximumSize(new java.awt.Dimension(380, 120));
@@ -172,7 +172,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(153, 153, 153));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("É possível formar um triângulo com essas medidas?");
-        pnlHome.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 362, 20));
+        pnlHome.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 362, 20));
 
         sldSegmentoC.setFont(new java.awt.Font("Arial", 2, 12)); // NOI18N
         sldSegmentoC.setForeground(new java.awt.Color(0, 102, 102));
@@ -181,7 +181,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 sldSegmentoCStateChanged(evt);
             }
         });
-        pnlHome.add(sldSegmentoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 134, 280, -1));
+        pnlHome.add(sldSegmentoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 134, 280, -1));
 
         sldSegmentoB.setFont(new java.awt.Font("Arial", 2, 12)); // NOI18N
         sldSegmentoB.setForeground(new java.awt.Color(0, 102, 102));
@@ -190,12 +190,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 sldSegmentoBStateChanged(evt);
             }
         });
-        pnlHome.add(sldSegmentoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 99, 280, -1));
+        pnlHome.add(sldSegmentoB, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 99, 280, -1));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 153));
         jLabel4.setText("Segmento B");
-        pnlHome.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 99, -1, 20));
+        pnlHome.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 99, -1, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -203,7 +203,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pnlHome, javax.swing.GroupLayout.PREFERRED_SIZE, 425, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -234,7 +234,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void bttVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bttVerificarActionPerformed
 	String txtResultadoTriangulo;
-	String txtResultadoTipo = "Um triângulo do tipo ";
+	String txtResultadoTipo = "Um triângulo ";
 	
 		
 	int segA = (int) sldSegmentoA.getValue();
@@ -246,7 +246,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 	int somaCA = segC + segA;
 	
 	if ((somaAB > segC) && (somaBC > segA) && (somaCA > segB)) {
-		txtResultadoTriangulo = "SIM";
+		txtResultadoTriangulo = "SIM!";
 		if ((segA == segB) && (segB == segC)) {
 			txtResultadoTipo += "Equilátero.";
 			lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/triangulo_equilatero.png")));
@@ -259,7 +259,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 		}
 	} else {
 		txtResultadoTriangulo = "<html><p color=\"red\">NÃO</p></html>";
-		txtResultadoTipo = "Ops, algo de errado não está certo.";
+		txtResultadoTipo = "<html><p background-color=\"white\">Ops, algo de errado não está certo.</p></html>";
 		lblImagemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nazare-tedesco-nazare-confusa.gif")));
 		
 	}
