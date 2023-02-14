@@ -32,8 +32,9 @@
 ## Screenshot
 
 <div align="center">
-    <img src="to_readme\screenshot--video.mp4"/>  
+    <img src="to_readme\nazareth--screenshot.gif"/>  
 </div>
+
 
 <br><br>
 ## Distribuição
